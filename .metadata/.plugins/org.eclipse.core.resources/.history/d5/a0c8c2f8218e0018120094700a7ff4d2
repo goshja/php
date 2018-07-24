@@ -1,0 +1,9 @@
+<?php 
+class shit {
+    protected function __construct() {
+        echo "shit starts;"
+    }
+}
+
+
+?>

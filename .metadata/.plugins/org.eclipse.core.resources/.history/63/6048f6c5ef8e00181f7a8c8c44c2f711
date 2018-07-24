@@ -1,0 +1,49 @@
+<?php
+//静态类
+class Db{
+    public static $conn = null; //用于存放mysqii对象
+    public static $res = null; //用于存放mysqli_result对象
+    //静态初始化方法
+    public static function construct(){
+        //echo "mysql initiated<br>";
+        $conf = include('config/dbConfig.php');
+        $host=$conf['host'];
+        $user=$conf['user'];
+        $password=$conf['password'];
+        $db=$conf['db'];
+        self::$conn = new mysqli($host, $user, $password, $db); //创建连接，使用mysqli对象
+        self::$conn->query('set names utf8');//防止乱码;
+        //echo "success.";
+    }
+    //静态析构方法
+    public static function destruct(){
+        if (isset(self::$conn)) {
+            self::$conn->close();//关闭连接;
+            //echo "closed";
+        }
+    }
+    //SQL查询
+    public static function query($sql) {
+        self::$res = self::$conn->query($sql);
+        return self::$res;
+    }
+    //SQL查询后将结果转成数组输出
+    public static function fetch_all($sql) {
+        $res = self::$conn->query($sql);
+        return $res->fetch_assoc();
+    }
+}//类结束
+
+//测试代码
+Db::construct();
+$a = Db::fetch_all('SELECT * FROM `login` where `user_id`=2');
+print_r($a);
+Db::destruct();
+//echo phpinfo();
+// echo "<pre>";
+//$sql="select * from login where id ='2' or user='lisi' or id ='4'  ";
+//$dd=new Db();
+//echo"<pre>";
+//print_r ($dd->select2($sql));
+// var_dump($dd);
+?>

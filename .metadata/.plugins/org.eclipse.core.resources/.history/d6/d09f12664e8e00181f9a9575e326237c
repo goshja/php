@@ -1,0 +1,8 @@
+<?php 
+    return [        
+        'dbName' => 'php',
+        'user' => 'root';
+        'pwd' => '123456';
+        'tbName' => 'user';'
+    ];
+?>

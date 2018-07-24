@@ -1,0 +1,13 @@
+<?php 
+    include_once('.././model/Db.class.php');
+    class Search extends Db {
+        public function __construct() {
+            
+            
+        }
+    }
+    
+    //test code
+    $dbs = new Db();
+    
+?>

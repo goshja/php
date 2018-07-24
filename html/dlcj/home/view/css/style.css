@@ -1,0 +1,34 @@
+body {margin:0;
+padding:0;
+text-align:center
+font: 12px Arial, 宋体}
+.border {border:1px solid #888;}
+#container {width:100%;text-align:center;}
+#header {width:1024px;margin:0 auto; overflow: hidden;}
+#header .logo {float: left;}
+#header #search_area {float: right;padding-top: 10px;}
+#header_navi {
+			 	width: 1024px;
+				margin:0 auto;
+				text-align: center;
+				background-color: #ccc;
+				overflow:hidden;
+				}
+	#header_navi ul {
+		margin:0 auto;
+		padding:0px;
+		list-style:none;}
+		#header_navi ul li {
+		float:left;
+		width:14.285%;
+		display:block;
+		line-height:30px;
+		text-align:center;}
+#footer{}
+a{color:red;}
+a:hover {
+color:yellow;
+posistion:relative;
+top:100px;
+left:100px;
+}

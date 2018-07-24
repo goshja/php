@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>医药协会首页</title>
+</head>
+
+<body>
+	<div class='denglu'></div>
+	<div class="main">
+		<header class='head'>
+			<img src="images/top_r1_c1.jpg" alt="医药协会logo" />
+			<div class="right">
+				<div class='login'>
+					游客您好！您还没有<a href="login.php">登录</a>,若您不是会员请先免费<a href="register.php">注册</a>
+				</div>
+				<div class='list'>
+					<ul>
+						<li style="background:url(images/top_r4_c4.jpg) no-repeat"><a href="message.html">留言板</a>
+						<li style="background:url(images/top_r4_c6.jpg) no-repeat"><a href="#">订阅</a>
+					</ul>
+				</div>
+			</div>
+		</header>
+	</div>
+</body>
+</html>

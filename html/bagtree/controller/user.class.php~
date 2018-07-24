@@ -1,0 +1,25 @@
+<?php
+	class User {
+		public $username;
+		public $password;
+		public $register_time;
+		public $email;
+
+		function register($username,$password,$email){
+			$this->username = $username;//注册过程。。。
+			$this->password = $password;
+			$this->email = $email;
+		}
+
+		function login() {
+			//TODO:登录过程。。。
+		}
+		function __construct($usrnm) {
+			$this->username = $usrnm;
+			echo $this->username;
+		}
+
+	} //user对象结束
+	
+	$u = new User("John Smith");
+?>

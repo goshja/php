@@ -1,0 +1,16 @@
+<?php
+	class MyMobile{
+		public $model = "John";
+		private $age = "0";
+		public function sayHello() {
+			echo "hello!";
+		}
+		function MyClass1($name, $age) {
+			$this->name = $name;
+			$this->age = $age;
+		}
+		
+	}
+	$MyObject1= new MyClass1("aaa","222");
+	var_dump($MyObject1);
+?>

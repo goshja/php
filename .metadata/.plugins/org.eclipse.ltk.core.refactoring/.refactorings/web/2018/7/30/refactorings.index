@@ -1,0 +1,3 @@
+1532395118376	Rename resource 'config.php'
+1532395124150	Move 'dbConfig.php' to 'config'
+1532398559077	Rename resource 'Db.static.class.php'

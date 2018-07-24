@@ -1,0 +1,11 @@
+<!DOCTYPE html/>
+<html>
+<?php
+echo "welcome!<br/>";
+
+echo shit
+?>
+<script>
+document.write("ok;<br//>well;");
+</script>
+</html>

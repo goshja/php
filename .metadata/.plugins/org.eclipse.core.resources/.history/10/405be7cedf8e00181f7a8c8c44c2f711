@@ -1,0 +1,34 @@
+<?php
+    // echo dirname(__DIR__);上级路径;
+    $conf=include(__DIR__."/config.php");//绝对路径
+class Db{
+    public $conn;
+    public function __construct(){
+        $conf=include(__DIR__."/config.php");
+        $host=$conf['host'];
+        $user=$conf['user'];
+        $password=$conf['password'];
+        $db=$conf['db'];
+        $this->conn=mysqli_connect($host,$user,$password,$db);
+        mysqli_query($this->conn,"set names utf8");
+    }
+    public function login($str){
+        $pp=mysqli_query($this->conn,"$str");
+        $mp=[];
+        while ($mm=mysqli_fetch_assoc($pp)){
+                $mp[]=$mm;
+        }
+        return $mp;
+    }
+    public function find($str){
+        $pp=mysqli_query($this->conn,"$str");
+        $mm=mysqli_fetch_assoc($pp);
+        return $mm;
+    }
+    public function insert($sql){
+        mysqli_query($this->conn,$sql);
+        $res=mysqli_affected_rows($this->conn);
+        return $res;
+    }//添加内容;
+}
+?>

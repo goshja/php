@@ -1,0 +1,13 @@
+<?php 
+    include_once('.././model/Db.class.php');
+
+    class Search extends Db {
+        public function __construct($search) {   //构造函数中传入要搜索的文本值
+            
+        }
+    }
+    
+    //test code
+    //$dbs = new Db('花');
+    echo phpinfo();
+?>

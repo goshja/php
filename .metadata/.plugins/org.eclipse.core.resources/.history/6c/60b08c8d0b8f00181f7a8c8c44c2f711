@@ -1,0 +1,68 @@
+<?php
+//静态类
+class Db{
+    public static $conn = null; //用于存放mysqii_connect对象
+    public static $res = null; //用于存放mysqli_result对象
+    public static $resArr = null; //用于存放查询结果数组
+    //初始化静态成员变量
+    public static function init(){
+        //echo "mysql initiated<br>";
+        $conf = include('config/dbConfig.php');
+        $host=$conf['host'];
+        $user=$conf['user'];
+        $password=$conf['password'];
+        $db=$conf['db'];
+        self::$conn = mysqli_connect($host, $user, $password, $db); //创建连接，使用mysqli对象
+        self::$conn->query('set names utf8');//防止乱码;
+        //echo "success.";
+    }
+    //静态退出代码
+    public static function destroy(){
+        if (isset(self::$conn)) {
+            self::$conn->close();//关闭连接;
+            //echo "closed";
+        }
+    }
+    //SQL执行query命令
+    public static function query($sql) {
+        self::$res = self::$conn->query($sql);
+        return self::$res;
+    }
+    //增：
+    public static function insert($arr, $tb) {
+        $sql='';
+        foreach ($arr as $a) {
+            if (!$sql) $sql .= ',' ; //如果非空则加上逗号，以便连接下一段
+            if (is_string($a)) {$a = "\"$a\"";} //如果是字符串的值，则加上双引号
+                $sql .= $a;
+        }
+        $sql = "INSERT INTO $tb VALUES ($sql)" ;
+        return self::query($sql);
+    }
+    //查：SQL查询后将结果转成数组输出
+    public static function fetch_all($sql) {
+        $res = self::$conn->query($sql);
+        $resArr = [];
+        while ($row=$res->fetch_array() ) {
+            $resArr[]=$row;
+        }
+        self::$resArr = $resArr;
+        return $resArr;
+    }
+}//类结束
+
+//测试代码
+Db::init();
+//$a = Db::fetch_all('SELECT * FROM `login` where `user_id`BETWEEN 1 AND 2');
+//var_dump($a);
+$arr = [5,'lafa','asdf',time(), 'desc5'];
+Db::insert($arr, 'login');
+Db::destroy();
+//echo phpinfo();
+// echo "<pre>";
+//$sql="select * from login where id ='2' or user='lisi' or id ='4'  ";
+//$dd=new Db();
+//echo"<pre>";
+//print_r ($dd->select2($sql));
+// var_dump($dd);
+?>

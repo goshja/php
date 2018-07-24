@@ -1,0 +1,12 @@
+<?php 
+class shit {
+    public function __construct() {
+        echo "shit starts<br>";
+    }
+}
+
+class shit2 extends shit {
+    
+}
+$a = new shit2();
+?>

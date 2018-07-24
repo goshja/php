@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>医药协会首页</title>
+    <link type="text/css" rel="StyleSheet" href="css/index.css" />
+</head>
+
+<body>
+	<div class='denglu'></div> <!-- 无意义 -->
+	<div class="main">
+		<header class='head'> <!-- header部分开始 -->
+			<img src="images/top_r1_c1.jpg" alt="医药协会logo" />
+			<div class="right">
+				<div class='login'>
+					游客您好！您还没有<a href="login.php">登录</a>,若您不是会员请先免费<a href="register.php">注册</a>
+				</div>
+				<div class='list'>
+					<ul>
+						<li style="background:url(images/top_r4_c4.jpg) no-repeat"><a href="message.html">留言板</a>
+						<li style="background:url(images/top_r4_c6.jpg) no-repeat"><a href="#">订阅</a>
+						<li style="background:url(images/top_r4_c8.jpg) no-repeat"><a href="#">加入收藏</a>
+						<li style="background:url(images/top_r4_c10.jpg) no-repeat"><a href="#">论坛</a>
+						<li style="background:url(images/top_r4_c12.jpg) no-repeat"><a href="#">English</a>
+					</ul>
+				</div>
+			</div> <!-- 右侧导航条结束 -->
+		</header> <!--header部分结束-->
+		
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">关于分会</a></li>
+				<li><a href="#">行业动态</a></li>
+				<li><a href="#">学术交流</a></li>
+				<li><a href="#">业务合作</a></li>
+				<li><a href="#">历届年会</a></li>
+				<li><a href="#">会员之家</a></li>
+			</ul>
+			<div class="search">
+				<p></p>
+				<span> <input name="" type="text" /> </span>
+				<a href="#"></a>
+			</div>
+		</div> <!-- 顶部菜单栏结束 -->
+		
+		<div class="body">
+			<div class="slide-img">
+				<i style="left:0;">
+					<img src="images/header_r1_c1.jpg" width=745 height=260>
+					<img src="images/timg.jpeg" width=745 height=260>
+					<img src="images/timg (1).jpeg" width=745 height=260>
+					<img src="images/u=2337485920,4066388129&fm=27&gp=0.jpg" width=745 height=260>					
+				</i>
+				
+				<ul id="ul">
+					<li>1<span style="left:0" id="span"></span></li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+				</ul>
+			</div> <!-- slide-img结束 -->
+			<div class="list">
+				<ul>
+    				<li class="login"></li> <!-- 会员登录 -->
+    				<li class="ab">
+    					<h5>样品分会入会申请</h5>
+    					<h6>Application for membership</h6>
+    				</li>
+    				<li class="ab">
+    					<h5>生物样本库论坛</h5>
+    					<h6>Biological sample library </h6>
+    				</li>
+    				<li class="ab">
+    					<h5>历届年会入口</h5>
+    					<h6>Previous annual meetings</h6>
+    				</li>
+				</ul>
+			</div> <!-- 右侧导航结束 -->
+			<div class="body1">
+				<div class="body1_left">
+					<div class="body1_left_title">
+						<h5>
+							<p>关于分会</p>
+							<a href="#" ></a>
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div> <!-- body结束 -->
+	</div> <!-- main结束 -->
+</body>
+</html>

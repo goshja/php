@@ -1,0 +1,219 @@
+!SESSION 2018-07-16 11:01:24.387 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 11:29:24.117
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2018-07-16 11:29:24.117
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2018-07-16 11:29:24.118
+!MESSAGE "PHP Development Tools (PDT)" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:29:24.118
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:29:24.118
+!MESSAGE Software being installed: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:29:24.118
+!MESSAGE Missing requirement: Composer Eclipse Plugin 4.2.0.201611142355 (org.eclipse.php.composer.core 4.2.0.201611142355) requires 'bundle org.eclipse.wst.json.core 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:29:24.118
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:29:24.118
+!MESSAGE From: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:29:24.118
+!MESSAGE To: org.eclipse.php.composer.core [4.2.0.201611142355]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 11:29:24.120
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2018-07-16 11:29:24.120
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2018-07-16 11:29:24.120
+!MESSAGE "PHP Development Tools (PDT)" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:29:24.120
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:29:24.120
+!MESSAGE Software being installed: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:29:24.121
+!MESSAGE Missing requirement: Composer Eclipse Plugin 4.2.0.201611142355 (org.eclipse.php.composer.core 4.2.0.201611142355) requires 'bundle org.eclipse.wst.json.core 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:29:24.121
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:29:24.121
+!MESSAGE From: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:29:24.121
+!MESSAGE To: org.eclipse.php.composer.core [4.2.0.201611142355]
+
+!ENTRY org.eclipse.equinox.p2.director 4 1 2018-07-16 11:30:28.658
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:28.658
+!MESSAGE Software being installed: PHP Development Tools (PDT) SDK Feature 4.2.0.201611142355 (org.eclipse.php.sdk.feature.group 4.2.0.201611142355)
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:28.658
+!MESSAGE Missing requirement: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355) requires 'org.eclipse.wst.json_ui.feature.feature.group 0.0.0' but it could not be found
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:30:28.658
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:28.658
+!MESSAGE From: PHP Development Tools (PDT) SDK Feature 4.2.0.201611142355 (org.eclipse.php.sdk.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:28.658
+!MESSAGE To: org.eclipse.php.composer.feature.group [4.2.0.201611142355]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 11:30:28.747
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:30:28.747
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:28.748
+!MESSAGE Software being installed: PHP Development Tools (PDT) SDK Feature 4.2.0.201611142355 (org.eclipse.php.sdk.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:28.748
+!MESSAGE Missing requirement: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355) requires 'org.eclipse.wst.json_ui.feature.feature.group 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:30:28.748
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:28.748
+!MESSAGE From: PHP Development Tools (PDT) SDK Feature 4.2.0.201611142355 (org.eclipse.php.sdk.feature.group 4.2.0.201611142355)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:28.748
+!MESSAGE To: org.eclipse.php.composer.feature.group [4.2.0.201611142355]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 11:30:28.776
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:30:28.776
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:28.776
+!MESSAGE Software being installed: PHP Development Tools (PDT) SDK Feature 4.2.0.201611142355 (org.eclipse.php.sdk.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:28.776
+!MESSAGE Missing requirement: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355) requires 'org.eclipse.wst.json_ui.feature.feature.group 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:30:28.776
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:28.777
+!MESSAGE From: PHP Development Tools (PDT) SDK Feature 4.2.0.201611142355 (org.eclipse.php.sdk.feature.group 4.2.0.201611142355)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:28.777
+!MESSAGE To: org.eclipse.php.composer.feature.group [4.2.0.201611142355]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 11:30:29.301
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:30:29.302
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:29.302
+!MESSAGE Software being installed: PHP Development Tools (PDT) SDK Feature 4.2.0.201611142355 (org.eclipse.php.sdk.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:29.302
+!MESSAGE Missing requirement: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355) requires 'org.eclipse.wst.json_ui.feature.feature.group 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:30:29.302
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:29.302
+!MESSAGE From: PHP Development Tools (PDT) SDK Feature 4.2.0.201611142355 (org.eclipse.php.sdk.feature.group 4.2.0.201611142355)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:29.302
+!MESSAGE To: org.eclipse.php.composer.feature.group [4.2.0.201611142355]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 11:30:29.304
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:30:29.304
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:29.304
+!MESSAGE Software being installed: PHP Development Tools (PDT) SDK Feature 4.2.0.201611142355 (org.eclipse.php.sdk.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:29.304
+!MESSAGE Missing requirement: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355) requires 'org.eclipse.wst.json_ui.feature.feature.group 0.0.0' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-07-16 11:30:29.304
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:29.304
+!MESSAGE From: PHP Development Tools (PDT) SDK Feature 4.2.0.201611142355 (org.eclipse.php.sdk.feature.group 4.2.0.201611142355)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 11:30:29.304
+!MESSAGE To: org.eclipse.php.composer.feature.group [4.2.0.201611142355]
+
+!ENTRY org.eclipse.ui 2 2 2018-07-16 11:31:12.974
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.html.ui, propertyPage: org.eclipse.wst.html.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.ui 2 2 2018-07-16 11:31:12.974
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2018-07-16 11:31:15.103 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 14:03:16.827
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 14:03:16.827
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 14:03:16.827
+!MESSAGE Software being installed: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 14:03:16.827
+!MESSAGE Missing requirement: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355) requires 'org.eclipse.wst.json_ui.feature.feature.group 0.0.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 14:03:16.833
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 14:03:16.833
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 14:03:16.833
+!MESSAGE Software being installed: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 14:03:16.833
+!MESSAGE Missing requirement: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355) requires 'org.eclipse.wst.json_ui.feature.feature.group 0.0.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 14:10:14.180
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 14:10:14.180
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 14:10:14.180
+!MESSAGE Software being installed: PHP Development Tools (PDT) Smart Import 4.2.0.201611142355 (org.eclipse.php.importer.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 14:10:14.180
+!MESSAGE Missing requirement: PHP Development Tools (PDT) Smart Import 4.2.0.201611142355 (org.eclipse.php.importer.feature.group 4.2.0.201611142355) requires 'org.eclipse.ui.ide 3.12.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 14:10:14.182
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 14:10:14.182
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 14:10:14.182
+!MESSAGE Software being installed: PHP Development Tools (PDT) Smart Import 4.2.0.201611142355 (org.eclipse.php.importer.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 14:10:14.182
+!MESSAGE Missing requirement: PHP Development Tools (PDT) Smart Import 4.2.0.201611142355 (org.eclipse.php.importer.feature.group 4.2.0.201611142355) requires 'org.eclipse.ui.ide 3.12.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 14:10:53.924
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 14:10:53.924
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 14:10:53.924
+!MESSAGE Software being installed: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 14:10:53.924
+!MESSAGE Missing requirement: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355) requires 'org.eclipse.wst.json_ui.feature.feature.group 0.0.0' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 14:10:53.927
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 14:10:53.927
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 14:10:53.927
+!MESSAGE Software being installed: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 14:10:53.927
+!MESSAGE Missing requirement: PHP Development Tools (PDT) Composer Support (Incubation) 4.2.0.201611142355 (org.eclipse.php.composer.feature.group 4.2.0.201611142355) requires 'org.eclipse.wst.json_ui.feature.feature.group 0.0.0' but it could not be found
+!SESSION 2018-07-16 15:27:33.555 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 15:28:13.195
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 15:28:13.195
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 15:28:13.196
+!MESSAGE Software being installed: PHP Development Tools (PDT) Zend and Xdebug Profiler Support 6.0.0.201806122250 (org.eclipse.php.profiler.feature.group 6.0.0.201806122250)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 15:28:13.196
+!MESSAGE Missing requirement: PHP Development Tools (PDT) 6.0.0.201806122250 (org.eclipse.php.feature.group 6.0.0.201806122250) requires 'org.eclipse.wst.web_ui.feature.feature.group 3.9.0.v201802222200' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-07-16 15:28:13.196
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 15:28:13.196
+!MESSAGE From: PHP Development Tools (PDT) Zend and Xdebug Profiler Support 6.0.0.201806122250 (org.eclipse.php.profiler.feature.group 6.0.0.201806122250)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 15:28:13.196
+!MESSAGE To: org.eclipse.php.feature.group [6.0.0.201806122250]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2018-07-16 15:28:13.200
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2018-07-16 15:28:13.200
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 15:28:13.200
+!MESSAGE Software being installed: PHP Development Tools (PDT) Zend and Xdebug Profiler Support 6.0.0.201806122250 (org.eclipse.php.profiler.feature.group 6.0.0.201806122250)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-07-16 15:28:13.200
+!MESSAGE Missing requirement: PHP Development Tools (PDT) 6.0.0.201806122250 (org.eclipse.php.feature.group 6.0.0.201806122250) requires 'org.eclipse.wst.web_ui.feature.feature.group 3.9.0.v201802222200' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-07-16 15:28:13.200
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 15:28:13.200
+!MESSAGE From: PHP Development Tools (PDT) Zend and Xdebug Profiler Support 6.0.0.201806122250 (org.eclipse.php.profiler.feature.group 6.0.0.201806122250)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-07-16 15:28:13.200
+!MESSAGE To: org.eclipse.php.feature.group [6.0.0.201806122250]

@@ -1,0 +1,117 @@
+<?php
+//数据库动态类
+class Db{
+    public $conn; //用于存放mysqii_connect对象
+    public $res; //用于存放mysqli_result对象
+    protected $sql; //存放sql_query
+    protected $tabNm; //存放table name
+    //初始化成员变量
+    public function __construct(){
+        //echo "mysql initiated<br>";
+        $conf = include('config/dbConfig.php');
+        $host=$conf['host'];
+        $user=$conf['user'];
+        $password=$conf['password'];
+        $db=$conf['db'];
+        $this->conn = mysqli_connect($host, $user, $password, $db); //创建连接，使用mysqli对象
+        $this->conn->query('set names utf8');//防止乱码;
+        //echo "success.";
+    }
+    //对象销毁
+    public function __destruct(){
+        if (isset($this->conn)) {
+            $this->conn->close();//关闭连接;
+            //echo "closed";
+        }
+    }
+    
+    //SQL执行query命令
+    public function query($sql) {
+        $this->res = $this->conn->query($sql);
+        return $this;
+    }
+    //增：$arr 为要增加的一行数据，$tb:表名
+    public function insert($arr, $tb) {
+        $sql = NULL;
+        foreach ($arr as $a) {
+            if (!is_NULL($sql)) $sql .= ',' ; //如果非空则加上逗号，以便连接下一段
+            if (is_string($a)) {$a = "\"$a\"";} //如果是字符串的值，则加上双引号
+            $sql .= $a;
+        }
+        $sql = "INSERT INTO $tb VALUES ($sql)" ;
+        return $this->query($sql);
+    }
+    
+    //删 $cond:条件字符串，如user_name="lucy"
+    //$tb: 表名
+    public function delete($cond, $tb) {
+        $sql = "DELETE FROM $tb WHERE $cond;";
+        return $this->query($sql);
+    }
+    
+    //改：update
+    public function update($set, $cond, $tb) {
+        $sql = "UPDATE $tb SET $set WHERE $cond";
+        return $this->query($sql);
+    }
+    
+    //查1：select
+    /*
+     * 根据传入的sql语句查询数据
+     * @access public
+     * @param string
+     * @return Db $this对象
+     */
+    public function select ($sql = '') {
+        if ($sql == "" && $this->tabNm) {
+            $sql = "SELECT * FROM $this->tabNm ";
+        }   if ($sql != "" && $this->tabNm) {
+            //若$sql不为空，则保持$sql不变
+        }
+        $this->sql = $sql;
+        $this->query();
+        return $this;
+    }
+    
+    //设置存放在对象中的table名字,并初始化sql语句
+    function tab($tabNm) {
+        $this->tabNm = $tabNm;
+        $this->sql = "SELECT * FROM $tabNm ";
+        return $this;
+    }
+    
+    //查2：将SQL结果转成数组输出
+    /*
+     * @access public
+     * @param N/A - $this->res
+     * @return array数组
+     */
+    public function fetch_array() {
+        $res = $this->$res;
+        if ($res!='') {
+            $resArr = [];
+            while ($row=mysqli_fetch_array($res) ) {
+                $resArr[]=$row;
+            }
+            return $resArr;
+        }
+    }
+    
+    
+}//类结束
+
+//测试代码
+$a = new Db;
+//$a = Db::fetch_all('SELECT * FROM `login` where `user_id`BETWEEN 1 AND 2');
+//var_dump($a);
+//$arr = [5,'lafa','asdf',time(), 'desc5'];
+//var_dump(Db::insert($arr, 'login'));
+$a->update('pwd="asdfasdf..."', 'user_id="0"', 'login');
+//echo phpinfo();
+// echo "<pre>";
+//$sql="select * from login where id ='2' or user='lisi' or id ='4'  ";
+//$dd=new Db();
+//echo"<pre>";
+//print_r ($dd->select2($sql));
+// var_dump($dd);
+?>

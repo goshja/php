@@ -1,0 +1,7 @@
+@import 'css.css';
+body{
+	background:#ffffff;
+	font-size:13px;
+	line-height:150%;
+	color: #666;
+}

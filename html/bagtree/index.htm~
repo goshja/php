@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Here is the title.</title>
+	<meta charset="UTF-8" />
+	<meta  name="keywords" content="keyword1,keyword2, keywords"/>
+	<meta name="description" content="the description of this page"/>
+	<meta http-equiv="refresh" content="100; url=./" />
+	<link href="./css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<div id="header">
+		<div class="logo">
+			<img src="./images/top_r1_c1.jpg" alt="logo_image">
+		</div>
+		<div class="header_notes">
+			<div class="welcome_notes">
+				<p>游客您好，您还没有登录，若您不是会员请先免费注册</p>
+			</div>
+			<div class="header_navi">
+			<div class="wrapper">
+			<ul>
+				<li style="list-style-image:url(./images/top_r4_c4.jpg);">留言板</li>
+				<div class="deliminator">|</div>
+				<li style="list-style-image:url(./images/top_r4_c6.jpg);">订阅</li>
+				<div class="deliminator">|</div>
+				<li style="list-style-image:url(./images/top_r4_c8.jpg);">加入收藏</li>
+				<div class="deliminator">|</div>
+				<li style="list-style-image:url(./images/top_r4_c10.jpg);">论坛</li>
+				<div class="deliminator">|</div>
+				<li style="list-style-image:url(./images/top_r4_c12.jpg);">English</li>
+			</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!-- 正文开始 -->
+	<div class="a1">
+		<table>
+			<tr>
+				<td>关于分会</td>
+				<td>行业动态</td>
+				<td>学术交流</td>
+				<td>业务合作</td>
+				<td>历届年会</td>
+				<td>会员之家</td>
+				<td colspan=2> <form><input name="search" value="begin searching"/><form> </td>
+				<td><form><input type="button" name="searchButt" value="搜索一下"/></form></td>
+			</tr>
+		</table>
+	</div>
+	<div class="e1">
+		<?php
+			$rows = [	["id"=>"1","title"="1t"]
+					["id"=>"2","title"="2t"]
+					["id"=>"3","title"="3t"]
+					["id"=>"4","title"="4t"]
+					["id"=>"5","title"="5t"]
+				];
+			foreach ($i in $rows)
+				{echo "<a href=''>".$i.title."</a>"}
+		?>	
+	</div>
+
+	<div>
+		<h1>What ever you say and talk about...		</h1>
+	</div>
+</body>
+
+</html>

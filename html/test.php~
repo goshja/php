@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo "Hello World!";
+//遍历数组
+	$arr =['asdfsdf','adfasd','asdfasdfsadfsdf',1,2,3];
+	foreach ($arr as $val)
+	{
+	echo $val."<br>";}
+?>
+
+</body>
+</html>

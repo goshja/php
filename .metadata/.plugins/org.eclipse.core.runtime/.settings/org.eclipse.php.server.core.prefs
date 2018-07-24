@@ -1,0 +1,3 @@
+defaultPHPServer=Default PHP Web Server
+eclipse.preferences.version=1
+phpServers=<server><hostname>www.mymed.com</hostname><port>-1</port><debuggerId>org.eclipse.php.debug.core.xdebugDebugger</debuggerId><document_root>/var/www/med</document_root><name>Default PHP Web Server</name><base_url>http\://www.mymed.com</base_url><id>php-server-2a19c327-efa9-49a0-bce3-be99f5fd224d</id></server>\u0005<server><hostname>localhost</hostname><port>8773</port><debuggerId>org.eclipse.php.debug.core.noneDebugger</debuggerId><name>PHP Built-in Server at localhost</name><base_url>http\://localhost</base_url><id>php-server-a3973b3a-edd8-4e42-b7ec-97ba5d510db6</id></server>

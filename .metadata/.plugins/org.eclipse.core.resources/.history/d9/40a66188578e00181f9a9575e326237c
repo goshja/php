@@ -1,0 +1,6 @@
+<?php 
+class db {
+    private $mysqlConfig = include (__DIR__.'/config.php');
+    
+}
+?>

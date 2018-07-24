@@ -1,0 +1,20 @@
+<?php
+	class User {
+		$username;
+		$password;
+		$register_time;
+		$email;
+		function register($username;$password;$email;){
+			$this->username = $username;//TODO:注册过程。。。
+			$this->password = $password;
+			$this->email = $email;
+		}
+		function login() {
+			//TODO:登录过程。。。
+		}
+		function __construct($usrnm) {
+			$this->username = $usrnm;
+		}
+	} //user对象结束
+		
+?>

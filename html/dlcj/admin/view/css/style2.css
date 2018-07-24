@@ -1,0 +1,12 @@
+body {text-align:center}
+#container {width:100%}
+#header {width:800px;margin:0 auto }
+#PageBody {width:800px;margin:0 auto}
+.top_right {margin-top:10%;}
+a{color:red;}
+a:hover {
+color:yellow;
+posistion:relative;
+top:100px;
+left:100px;
+}

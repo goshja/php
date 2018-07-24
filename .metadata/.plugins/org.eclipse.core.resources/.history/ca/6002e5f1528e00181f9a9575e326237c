@@ -1,0 +1,4 @@
+<?php 
+    $mysqlConfig = include 'config.php';
+    var_dump($mysqlConfig);
+?>
